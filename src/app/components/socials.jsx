@@ -52,55 +52,59 @@ export default function DefaultSpeedDial() {
           {/* <SpeedDialContent className="rounded-full border border-blue-gray-50/5 bg-white/5 shadow-xl shadow-black/10"> */}
 
           {/* Facebook */}
-          <Link href={"#"}>
-            <SpeedDialAction className="font-light hover:font-bold bg-gray-50/0 border-2 text-gray-900 my-2">
-              <Image
-                width={500}
-                height={500}
-                className="my-2 h-5 w-5"
-                src={Facebook}
-                alt="Logo"
-              />
-            </SpeedDialAction>
+          <Link
+            href={"#"}
+            className="border-2 border-white rounded-full flex p-1 m-3 hover:scale-110 duration-500 ease-in-out transform"
+          >
+            <Image
+              width={500}
+              height={500}
+              className="h-4 w-4"
+              src={Facebook}
+              alt="Logo"
+            />
           </Link>
 
           {/* Behance */}
-          <Link href={"#"}>
-            <SpeedDialAction className="font-light hover:font-bold bg-gray-50/0 border-2 text-gray-900 my-2">
-              <Image
-                width={500}
-                height={500}
-                className="my-2 h-5 w-5"
-                src={Behance}
-                alt="Logo"
-              />
-            </SpeedDialAction>
+          <Link
+            href={"#"}
+            className="border-2 border-white rounded-full flex p-1 m-3 hover:scale-110 duration-500 ease-in-out transform"
+          >
+            <Image
+              width={500}
+              height={500}
+              className="h-4 w-4"
+              src={Behance}
+              alt="Logo"
+            />
           </Link>
 
           {/* Linkedin */}
-          <Link href={"#"}>
-            <SpeedDialAction className="font-light hover:font-bold bg-gray-50/0 border-2 text-gray-900 my-2">
-              <Image
-                width={500}
-                height={500}
-                className="my-2 h-5 w-5"
-                src={Linkedin}
-                alt="Logo"
-              />
-            </SpeedDialAction>
+          <Link
+            href={"#"}
+            className="border-2 border-white rounded-full flex p-1 m-3 hover:scale-110 duration-500 ease-in-out transform"
+          >
+            <Image
+              width={500}
+              height={500}
+              className="h-4 w-4"
+              src={Linkedin}
+              alt="Logo"
+            />
           </Link>
 
           {/* Instagram */}
-          <Link href={"#"}>
-            <SpeedDialAction className="font-light hover:font-bold bg-gray-50/0 border-2 text-gray-900 my-2">
-              <Image
-                width={500}
-                height={500}
-                className="my-2 h-5 w-5"
-                src={Instagram}
-                alt="Logo"
-              />
-            </SpeedDialAction>
+          <Link
+            href={"#"}
+            className="border-2 border-white rounded-full flex p-1 m-3 hover:scale-110 duration-300 ease-in-out transform"
+          >
+            <Image
+              width={500}
+              height={500}
+              className="h-4 w-4"
+              src={Instagram}
+              alt="Logo"
+            />
           </Link>
 
           {/* </SpeedDialContent> */}

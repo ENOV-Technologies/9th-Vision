@@ -1,23 +1,14 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Popup from "/public/Bheki.png";
+import { Tooltip } from "@material-tailwind/react";
 
 export default function Landing() {
-  // const [scrollY, setScrollY] = useState(0);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setScrollY(window.scrollY);
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
   return (
     <div className="bg-gray-900 h-full">
-      <div className="relative isolate overflow-hidden pt-14">
+      <div className="relative isolate overflow-hidden">
+        {/* Image */}
         <div
           className="absolute inset-0 -z-10 h-full w-full"
           // style={{
@@ -36,6 +27,7 @@ export default function Landing() {
           />
         </div>
 
+        {/* Content */}
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-36">
           <div className="text-center antialiased">
             {/* one */}
@@ -61,11 +53,11 @@ export default function Landing() {
             {/* four */}
             <div className="py-8">
               <div className="relative flex items-center capitalise font-bold tracking-tight text-white text-base">
-                <div class="border-t border-gray-50 border-x-8 px-6" />
+                <div class="border-t border-gray-50 border-x-8 px-6 grow" />
                 <span class="flex-shrink mx-4 text-white text-base font-light text-center">
                   Welcome to Ninth Vision
                 </span>
-                <div class="border-t border-gray-50 border-x-8 px-6" />
+                <div class="border-t border-gray-50 border-x-8 px-6 grow" />
               </div>
               <p className=" text-base leading-8 text-white font-light">
                 Is your company ready to weather the recession?
@@ -77,13 +69,36 @@ export default function Landing() {
             <div className="mt-2 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="text-sm font-semibold leading-6 text-white p-3 px-6 border-2 rounded-full hover:border-hidden hover:scale-105 hover:bg-gray-50 hover:text-black duration-500 ease-in-out transform"
+                className="text-sm font-semibold leading-6 text-white p-3 px-6 border-2 rounded-full hover:border-hidden hover:bg-gray-50 hover:text-black duration-500 ease-in-out transform"
               >
                 Let’s get you started
                 {/* <span aria-hidden="true">→</span> */}
               </a>
             </div>
           </div>
+        </div>
+
+        {/* Tooltip */}
+        <div className="z-50 absolute right-20 bottom-14">
+          <Tooltip
+            placement="top"
+            content="Hi, and welcome
+            to Ninth Vision.
+            How can I be of
+            assistance?"
+            color="gray"
+            size="regular"
+          >
+            <div className="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <Image
+                src={Popup}
+                width={600}
+                height={600}
+                alt=""
+                className="rounded-full h-12 w-12 object-cover"
+              />
+            </div>
+          </Tooltip>
         </div>
       </div>
     </div>
