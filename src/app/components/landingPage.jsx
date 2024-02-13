@@ -69,17 +69,17 @@ export default function Landing() {
             <div className="mt-2 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="text-sm font-semibold leading-6 text-white p-3 px-6 border-2 rounded-full hover:border-hidden hover:bg-gray-50 hover:text-black duration-500 ease-in-out transform"
+                className="text-sm font-semibold leading-6 text-white p-3 px-6 border-2 rounded-full duration-500 ease-in-out transform relative overflow-hidden"
               >
+                <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-600 to-pink-600 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
                 Let’s get you started
-                {/* <span aria-hidden="true">→</span> */}
               </a>
             </div>
           </div>
         </div>
 
         {/* Tooltip */}
-        <div className="z-50 absolute right-20 bottom-14">
+        <div className="z-50 absolute right-20 bottom-14 border-2 m-2 rounded-full">
           <Tooltip
             placement="top"
             content="Hi, and welcome

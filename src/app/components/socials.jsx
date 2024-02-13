@@ -14,7 +14,7 @@ import {
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "/public/workshop.png";
+import Logo from "/public/logo.png";
 import Behance from "/public/behance.png";
 import Facebook from "/public/facebook.svg";
 import Instagram from "/public/instagram.png";
@@ -54,7 +54,7 @@ export default function DefaultSpeedDial() {
           {/* Facebook */}
           <Link
             href={"#"}
-            className="border-2 border-white rounded-full flex p-1 m-3 hover:scale-110 duration-500 ease-in-out transform"
+            className="border border-white rounded-full flex p-1 m-3 hover:scale-110 duration-500 ease-in-out transform"
           >
             <Image
               width={500}
@@ -68,7 +68,7 @@ export default function DefaultSpeedDial() {
           {/* Behance */}
           <Link
             href={"#"}
-            className="border-2 border-white rounded-full flex p-1 m-3 hover:scale-110 duration-500 ease-in-out transform"
+            className="border border-white rounded-full flex p-1 m-3 hover:scale-110 duration-500 ease-in-out transform"
           >
             <Image
               width={500}
@@ -82,7 +82,7 @@ export default function DefaultSpeedDial() {
           {/* Linkedin */}
           <Link
             href={"#"}
-            className="border-2 border-white rounded-full flex p-1 m-3 hover:scale-110 duration-500 ease-in-out transform"
+            className="border border-white rounded-full flex p-1 m-3 hover:scale-110 duration-500 ease-in-out transform"
           >
             <Image
               width={500}
@@ -96,7 +96,7 @@ export default function DefaultSpeedDial() {
           {/* Instagram */}
           <Link
             href={"#"}
-            className="border-2 border-white rounded-full flex p-1 m-3 hover:scale-110 duration-300 ease-in-out transform"
+            className="border border-white rounded-full flex p-1 m-3 hover:scale-110 ease-in-out transform"
           >
             <Image
               width={500}
