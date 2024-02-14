@@ -1,24 +1,23 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Slider from "react-slick";
 import Image from "next/image";
-import Popup from "/public/Bheki.png";
-import { Tooltip } from "@material-tailwind/react";
-import {
-  IconButton,
-  SpeedDial,
-  SpeedDialHandler,
-  SpeedDialContent,
-  SpeedDialAction,
-} from "@material-tailwind/react";
-import {
-  PlusIcon,
-  HomeIcon,
-  CogIcon,
-  Square3Stack3DIcon,
-} from "@heroicons/react/24/outline";
-import BG from "/public/ThinkingMan.jpg";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Clients() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+  };
+
   return (
     <div className="h-full" style={{ backgroundColor: "#480AEE" }}>
       <div className="overflow-hidden  py-24 sm:py-32">
@@ -46,51 +45,64 @@ export default function Clients() {
               </div>
             </div>
 
-            <div class="grid gap-4">
-              <div>
-                <img
-                  class="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="grid grid-cols-5 gap-4">
+            {/* Carousel */}
+            <div className="container mx-auto px-4 py-8 rounded-2xl">
+              <Slider {...settings}>
                 <div>
-                  <img
-                    class="h-auto max-w-full rounded-lg"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                  <Image
+                    src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt=""
+                    width={1200}
+                    height={800}
+                    className="rounded-2xl"
                   />
                 </div>
                 <div>
-                  <img
-                    class="h-auto max-w-full rounded-lg"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+                  <Image
+                    src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt=""
+                    width={1200}
+                    height={800}
+                    className="rounded-2xl"
                   />
                 </div>
                 <div>
-                  <img
-                    class="h-auto max-w-full rounded-lg"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+                  <Image
+                    src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt=""
+                    width={1200}
+                    height={800}
+                    className="rounded-2xl"
                   />
                 </div>
                 <div>
-                  <img
-                    class="h-auto max-w-full rounded-lg"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+                  <Image
+                    src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt=""
+                    width={1200}
+                    height={800}
+                    className="rounded-2xl"
                   />
                 </div>
                 <div>
-                  <img
-                    class="h-auto max-w-full rounded-lg"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+                  <Image
+                    src="https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt=""
+                    width={1200}
+                    height={800}
+                    className="rounded-2xl"
                   />
                 </div>
-              </div>
+                <div>
+                  <Image
+                    src="https://images.unsplash.com/photo-1611162618479-ee3d24aaef0b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D"
+                    alt=""
+                    width={1200}
+                    height={800}
+                    className="rounded-2xl"
+                  />
+                </div>
+              </Slider>
             </div>
           </div>
         </div>

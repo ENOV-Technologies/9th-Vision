@@ -18,6 +18,10 @@ export const images = {
         {
             protocol: 'https',
             hostname: 'images.material-tailwind.com'
+        },
+        {
+            protocol: 'https',
+            hostname: 'images.flowbite.amazonaws.com'
         }
     ],
 };
