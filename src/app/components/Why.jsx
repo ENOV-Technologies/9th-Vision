@@ -18,7 +18,7 @@ import {
   CogIcon,
   Square3Stack3DIcon,
 } from "@heroicons/react/24/outline";
-import BG from "/public/ThinkingManBack.jpg";
+import BG from "/public/ThinkingManback.jpg";
 import Engage from "/public/engage.png";
 import Connect from "/public/connect.png";
 
