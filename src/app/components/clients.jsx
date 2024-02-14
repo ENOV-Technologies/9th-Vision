@@ -11,7 +11,7 @@ export default function Clients() {
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -22,7 +22,7 @@ export default function Clients() {
     <div className="h-full" style={{ backgroundColor: "#480AEE" }}>
       <div className="overflow-hidden  py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-2 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             {/* Content */}
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
@@ -46,7 +46,7 @@ export default function Clients() {
             </div>
 
             {/* Carousel */}
-            <div className="container mx-auto px-4 py-8 rounded-2xl">
+            <div className="container mx-auto px-2 sm:py-40 py-4 ">
               <Slider {...settings}>
                 <div>
                   <Image
@@ -54,7 +54,7 @@ export default function Clients() {
                     alt=""
                     width={1200}
                     height={800}
-                    className="rounded-2xl"
+                    className=""
                   />
                 </div>
                 <div>
@@ -63,7 +63,7 @@ export default function Clients() {
                     alt=""
                     width={1200}
                     height={800}
-                    className="rounded-2xl"
+                    className=""
                   />
                 </div>
                 <div>
@@ -72,7 +72,7 @@ export default function Clients() {
                     alt=""
                     width={1200}
                     height={800}
-                    className="rounded-2xl"
+                    className=""
                   />
                 </div>
                 <div>
@@ -81,7 +81,7 @@ export default function Clients() {
                     alt=""
                     width={1200}
                     height={800}
-                    className="rounded-2xl"
+                    className=""
                   />
                 </div>
                 <div>
@@ -90,7 +90,7 @@ export default function Clients() {
                     alt=""
                     width={1200}
                     height={800}
-                    className="rounded-2xl"
+                    className=""
                   />
                 </div>
                 <div>
@@ -99,7 +99,7 @@ export default function Clients() {
                     alt=""
                     width={1200}
                     height={800}
-                    className="rounded-2xl"
+                    className=""
                   />
                 </div>
               </Slider>
