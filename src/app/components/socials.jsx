@@ -29,7 +29,7 @@ export default function DefaultSpeedDial() {
           <Image
             width={500}
             height={500}
-            className="my-2 h-12 w-12"
+            className="my-2 h-12 w-12 hover:scale-125 duration-300 ease-in-out transform delay-200"
             src={Logo}
             alt="Logo"
           />

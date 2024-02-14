@@ -35,18 +35,19 @@ export default function About() {
           />
         </div>
 
-        <div>
           <div className="py-48 px-18 mx-12">
             {/* Heading */}
-            <h1 className="text-7xl sm:text-9xl font-black tracking-tight text-white">
+            <h1 className="text-7xl sm:text-9xl font-black tracking-tight text-white capitalize">
               Let your
               <br /> brand tell
               <br /> your story
             </h1>
             {/* Heading end */}
 
+            {/* Content */}
             <div className="">
               <SpeedDial placement="right">
+                {/* Plus icon */}
                 <SpeedDialHandler>
                   <IconButton
                     size="lg"
@@ -56,6 +57,7 @@ export default function About() {
                   </IconButton>
                 </SpeedDialHandler>
 
+                {/* Hidden Content */}
                 <SpeedDialContent className="flex-row my-20">
                   <SpeedDialAction className="w-full sm:max-w-96 max-w-64 tracking-tight text-sm bg-white/0 border-0 text-left text-white font-light sm:text-base hover:scale-105">
                     {/* 1st */}
@@ -83,18 +85,6 @@ export default function About() {
                 </SpeedDialContent>
               </SpeedDial>
             </div>
-            {/* <div class="group relative m-12  justify-center">
-              <button class="rounded bg-amber-500 px-4 py-2 text-sm text-white shadow-sm">
-                Hover me!
-              </button>
-              <div class="absolute top-10 scale-0 transition-all rounded bg-gray-800/30 p-2 text-xs text-white group-hover:scale-100">
-                Story telling has always been part of the African way of life
-                and one way of making a memorable impression is through your
-                story. <br />
-                Let us help you and your brand stay top of mind.
-              </div>
-            </div> */}
-          </div>
         </div>
       </div>
     </div>
