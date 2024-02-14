@@ -79,7 +79,7 @@ export default function Landing() {
         </div>
 
         {/* Tooltip */}
-        <div className="z-40 absolute right-8 bottom-5 border-2 m-2 py-2 rounded-full">
+        <div className="z-40 absolute right-8 bottom-5 border-2 m-3 py-2 rounded-full">
           <Tooltip
             placement="top"
             content="Hi, and welcome
@@ -87,16 +87,16 @@ export default function Landing() {
             How can I be of
             assistance?"
             color="gray"
-            className="bg-gray-900/80 p-2 text-base font-light"
+            className="bg-gray-900/80 p-2 px-4 font-light w-full pb-4 text-sm max-w-52"
             size="regular"
           >
-            <div className="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            <div className="text-white focus:ring-4 focus:outline-none focus:ring-white font-medium rounded-lg text-sm px-5 py-2.5 text-center">
               <Image
                 src={Popup}
                 width={600}
                 height={600}
                 alt=""
-                className="rounded-full h-16 w-16 object-cover"
+                className="rounded-full h-16 w-16 object-cover animate-pulse"
               />
             </div>
           </Tooltip>

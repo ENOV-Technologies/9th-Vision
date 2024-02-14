@@ -32,7 +32,7 @@ export default function Clients() {
                     width={600}
                     height={600}
                     alt=""
-                    className="rounded-full h-32 w-32 object-cover border-2 border-spacing-16 mb-4 p-3"
+                    className="rounded-full h-32 w-32 object-cover border-2 border-spacing-16 mb-4 p-3 animate-pulse"
                   />
                   <h2 className="font-normal">Bhekisipho Maphosa</h2>
                   <h3 className="font-light">

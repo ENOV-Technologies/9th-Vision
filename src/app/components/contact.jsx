@@ -3,11 +3,20 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import Pizza from "/public/Pizza.png";
+import Link from "next/link";
+import {
+  IconButton,
+  SpeedDial,
+  SpeedDialHandler,
+  SpeedDialContent,
+  SpeedDialAction,
+} from "@material-tailwind/react";
+import { PlusIcon } from "@heroicons/react/24/outline";
 
 export default function Contact() {
   return (
     <div className="h-full" style={{ backgroundColor: "#480AEE" }}>
-      <div className="overflow-hidden  py-24 sm:py-32">
+      <div className="overflow-hidden  py-24 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-2 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             {/* Content */}
@@ -20,10 +29,50 @@ export default function Contact() {
                   while its hot!
                 </h1>
                 {/* CTA */}
-                <div className="w-full mt-2 flex items-left">
-                  <Image src={Pizza} width={600} height={600} alt="relative" />
+                <div className="w-full mt-2 flex items-left relative">
+                  <Image src={Pizza} width={600} height={600} alt="" />
+                  {/* Content */}
+                  <div className="absolute sm:left-64 sm:bottom-40 left-40 bottom-20">
+                    <SpeedDial>
+                      {/* Plus icon */}
+                      <SpeedDialHandler>
+                        <IconButton
+                          size="lg"
+                          className="rounded-full bg-transparent my-4"
+                        >
+                          <PlusIcon className="h-10 w-10 border-2 rounded-full transition-transform group-hover:rotate-45 border-white" />
+                        </IconButton>
+                      </SpeedDialHandler>
+
+                      {/* Hidden Content */}
+                      <SpeedDialContent className="flex-row m-auto sm:mx-52 mx-0">
+                        <SpeedDialAction className="rounded-3xl p-4 w-full sm:max-w-96 max-w-64 tracking-tight text-sm border-0 text-left text-white font-light sm:text-base hover:scale-105 bg-black/80">
+                          {/* 1st */}
+                          <p className="w-full max-w-96 pb-4 text-sm">
+                            Did you know pizza is a 37 billion dollar industry?
+                            Wow that’s a lot of money!
+                          </p>
+
+                          {/* 2nd */}
+                          <span className="w-full max-w-96 text-sm">
+                            Please take time to tell us how we can add value and
+                            help you get a slice of the market share.
+                          </span>
+
+                          {/* CTA */}
+                          <div className="w-full mt-2 flex items-left">
+                            <a
+                              href="#"
+                              className="text-sm font-base leading-6 text-white p-2 px-6 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/15"
+                            >
+                              Grab a slice
+                            </a>
+                          </div>
+                        </SpeedDialAction>
+                      </SpeedDialContent>
+                    </SpeedDial>
+                  </div>
                 </div>
-                {/* Heading end */}
               </div>
             </div>
 
@@ -72,7 +121,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="my-4 text-sm font-light leading-6 text-white p-2 px-6 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/95 hover:text-gray-900 hover:shadow-xl hover:shadow-gray-900/30"
+                    className="my-4 text-sm font-light leading-6 text-white p-2 px-8 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/95 hover:text-gray-900 hover:shadow-xl hover:shadow-gray-900/30"
                   >
                     Send
                   </button>
@@ -82,6 +131,26 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="mx-auto max-w-7xl overflow-hidden px-6 py-4 sm:py-4 lg:px-8 font-light">
+        <p className="text-center text-xs text-white">
+          <br />
+          Copyright &copy;{new Date().getFullYear()} 9th Vision - All rights
+          reserved.
+          <br />
+          <span className="text-xs">
+            Developed by{" "}
+            <Link
+              className="hover:text-red-500"
+              href={"https://www.enovtechnologies.com/"}
+              target="_blank"
+            >
+              ENOV Technologies
+            </Link>
+          </span>
+        </p>
+      </footer>
     </div>
   );
 }
