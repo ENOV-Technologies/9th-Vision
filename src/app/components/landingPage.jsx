@@ -29,7 +29,7 @@ export default function Landing() {
         </div>
 
         {/* Content */}
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-40">
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-48">
           <div className="text-center antialiased">
             {/* one */}
             <h1 className="text-7xl font-bold tracking-tight text-white sm:text-7xl uppercase">
@@ -87,7 +87,7 @@ export default function Landing() {
             How can I be of
             assistance?"
             color="gray"
-            className="bg-gray-50/10 p-2 text-base font-light"
+            className="bg-gray-900/80 p-2 text-base font-light"
             size="regular"
           >
             <div className="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
