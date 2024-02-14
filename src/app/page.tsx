@@ -4,6 +4,7 @@ import About from "./components/about";
 import Why from "./components/Why";
 import Clients from "./components/clients";
 import CTA from "./components/CTA";
+import Contact from "./components/contact";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Why/>
       <Clients/>
       <CTA/>
+      <Contact/>
     </>
   );
 }
