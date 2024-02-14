@@ -24,6 +24,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable}`}>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/icon.svg"
+          type="image/svg"
+          sizes="<generated>"
+        />
+        {/* <link
+          rel="apple-touch-icon"
+          href="/apple-icon.png"
+          type="image/png"
+          sizes="57x57"
+        /> */}
+      </head>
       <body className="relative">
         {children}
         <Socials />

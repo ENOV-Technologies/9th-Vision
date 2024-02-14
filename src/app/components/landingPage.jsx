@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Popup from "/public/Bheki.png";
 import { Tooltip } from "@material-tailwind/react";
+import BG from "/public/Main.jpg";
 
 export default function Landing() {
   return (
@@ -21,8 +22,8 @@ export default function Landing() {
             // height={1000}
             fill
             // sizes="100vw"
-            src="https://images.unsplash.com/photo-1628498188904-036f5e25e93e?q=80&w=2268&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
+            src={BG}
+            alt="Stars"
             className="h-full w-full object-cover antialiased"
           />
         </div>
@@ -69,9 +70,8 @@ export default function Landing() {
             <div className="mt-2 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="text-sm font-semibold leading-6 text-white p-3 px-6 border-2 rounded-full duration-500 ease-in-out transform relative overflow-hidden"
+                className="text-sm font-semibold leading-6 text-white p-3 px-6 border-2 rounded-full duration-500 ease-in-out transform relative overflow-hidden hover:bg-white/15"
               >
-                <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-600 to-pink-600 opacity-0 hover:opacity-100 transition-opacity duration-300"></span>
                 Let’s get you started
               </a>
             </div>
@@ -79,7 +79,7 @@ export default function Landing() {
         </div>
 
         {/* Tooltip */}
-        <div className="z-50 absolute right-20 bottom-14 border-2 m-2 rounded-full">
+        <div className="z-40 absolute right-8 bottom-5 border-2 m-2 py-2 rounded-full">
           <Tooltip
             placement="top"
             content="Hi, and welcome
@@ -87,6 +87,7 @@ export default function Landing() {
             How can I be of
             assistance?"
             color="gray"
+            className="bg-gray-50/10 p-2 text-base font-light"
             size="regular"
           >
             <div className="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -95,7 +96,7 @@ export default function Landing() {
                 width={600}
                 height={600}
                 alt=""
-                className="rounded-full h-12 w-12 object-cover"
+                className="rounded-full h-16 w-16 object-cover"
               />
             </div>
           </Tooltip>
