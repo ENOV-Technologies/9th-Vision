@@ -36,32 +36,45 @@ export default function About() {
         </div>
 
         <div>
-          <div className="py-36 px-18 mx-12">
+          <div className="py-48 px-18 mx-12">
+            {/* Heading */}
             <h1 className="text-7xl sm:text-9xl font-black tracking-tight text-white">
               Let your
               <br /> brand tell
               <br /> your story
             </h1>
+            {/* Heading end */}
+
             <div className="">
               <SpeedDial placement="right">
                 <SpeedDialHandler>
-                  <IconButton size="lg" className="rounded-full">
-                    <PlusIcon className="h-5 w-5 transition-transform group-hover:rotate-45" />
+                  <IconButton
+                    size="lg"
+                    className="rounded-full bg-transparent my-4"
+                  >
+                    <PlusIcon className="h-10 w-10 border-2 rounded-full transition-transform group-hover:rotate-45 border-white" />
                   </IconButton>
                 </SpeedDialHandler>
-                <SpeedDialContent className="flex-row">
-                  <SpeedDialAction className="p-4 rounded-sm bg-white/10 border-0 text-left">
-                    <p>
+
+                <SpeedDialContent className="flex-row my-20">
+                  <SpeedDialAction className="w-full sm:max-w-96 max-w-64 tracking-tight text-sm bg-white/0 border-0 text-left text-white font-light sm:text-base hover:scale-105">
+                    {/* 1st */}
+                    <p className="">
                       Story telling has always been part of the African way of
                       life and one way of making a memorable impression is
-                      through your story. <br />
-                      Let us help you and your brand stay top of mind.
+                      through your story.
                     </p>
+
+                    {/* 2nd */}
+                    <span className="my-4 w-full max-w-96">
+                      Let us help you and your brand stay top of mind.
+                    </span>
+
                     {/* CTA */}
-                    <div className="mt-2 flex items-center justify-center gap-x-6">
+                    <div className="w-full mt-2 flex items-left">
                       <a
                         href="#"
-                        className="text-sm font-semibold leading-6 text-white p-3 px-6 border-2 rounded-full duration-500 ease-in-out transform relative overflow-hidden hover:bg-white/15"
+                        className="text-sm font-base leading-6 text-white p-2 px-6 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/15"
                       >
                         Let’s get you started
                       </a>

@@ -29,7 +29,7 @@ export default function Landing() {
         </div>
 
         {/* Content */}
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-36">
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-40">
           <div className="text-center antialiased">
             {/* one */}
             <h1 className="text-7xl font-bold tracking-tight text-white sm:text-7xl uppercase">
