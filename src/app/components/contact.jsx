@@ -110,10 +110,10 @@ export default function Contact() {
                           {/* CTA */}
                           <div className="w-full mt-2 flex items-left">
                             <a
-                              href="#"
+                              href="tel:+264 81 201 9135"
                               className="text-sm font-base leading-6 text-white p-2 px-6 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/15"
                             >
-                              Grab a slice
+                              Grab a slice of the Market
                             </a>
                           </div>
                         </SpeedDialAction>
@@ -147,6 +147,7 @@ export default function Contact() {
                   </div>
                   {/* Form Intro end */}
 
+                  {/* Name */}
                   <div class="mb-5">
                     <input
                       type="text"
@@ -156,6 +157,7 @@ export default function Contact() {
                       {...register("name", { required: true })}
                     />
                   </div>
+                  {/* Email */}
                   <div class="mb-5">
                     <input
                       type="email"
@@ -166,13 +168,14 @@ export default function Contact() {
                     />
                   </div>
 
+                  {/* message */}
                   <textarea
                     id="message"
                     rows="4"
                     className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-white focus:border-gray-50  dark:placeholder-gray-400 font-light focus:shadow-2xl focus:scale-105 transition duration-500 ease-in-out transform"
                     placeholder="We got you, drop us a mail..."
                   />
-                  {/* Add reCAPTCHA component */}
+                  {/* reCAPTCHA component */}
                   <ReCAPTCHA
                     sitekey={"6LdMb3QpAAAAAHC5fNjEvkX9nGXLzYcjRVdVGkwx"}
                     onChange={(value) => setVerified(!!value)}

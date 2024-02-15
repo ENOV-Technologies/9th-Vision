@@ -45,10 +45,10 @@ export default function Clients() {
                 {/* CTA */}
                 <div className="w-full mt-2 flex items-left">
                   <a
-                    href="#"
+                    href="tel:+264 81 201 9135"
                     className="text-sm font-light leading-6 text-white p-2 px-6 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/95 hover:text-gray-900 hover:shadow-xl hover:shadow-gray-900/30"
                   >
-                    Join our happy list
+                    Make the Call
                   </a>
                 </div>
                 {/* Heading end */}
@@ -157,7 +157,6 @@ export default function Clients() {
                     className=""
                   />
                 </div>
-                
               </Slider>
             </div>
           </div>
