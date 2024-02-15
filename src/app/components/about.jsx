@@ -44,7 +44,7 @@ export default function About() {
               <SpeedDialHandler>
                 <IconButton
                   size="lg"
-                  className="rounded-full bg-transparent my-4"
+                  className="rounded-full bg-transparent my-5"
                 >
                   <PlusIcon className="h-10 w-10 border-2 rounded-full transition-transform group-hover:rotate-45 border-white animate-bounce hover:animate-none" />
                 </IconButton>
@@ -52,7 +52,7 @@ export default function About() {
 
               {/* Hidden Content */}
               <SpeedDialContent className="flex-row my-20">
-                <SpeedDialAction className="w-full sm:max-w-96 max-w-64 tracking-tight text-sm bg-white/0 border-0 text-left text-white font-light sm:text-base hover:scale-105">
+                <SpeedDialAction className="w-full sm:max-w-96 max-w-64 tracking-tight text-base bg-white/0 border-0 text-left text-white font-light sm:text-sm hover:scale-105">
                   {/* 1st */}
                   <p className="">
                     Story telling has always been part of the African way of

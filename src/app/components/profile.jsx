@@ -79,11 +79,11 @@ export default function Profile() {
                   worked with numerous international communications, marketing
                   and advertising organisations. His wealth of brand management
                   experience and expertise in addition to the various career
-                  roles over a 14-year period have provided him with a rounded
+                  roles over a 17-year period have provided him with a rounded
                   knowledge and understanding of how to construct, implement and
                   metrically analyze brand strategies for diverse demographics.
                 </p>
-                <p className="mt-8">
+                <p className="mt-4">
                   Bheki has worked as a Creative Director, Senior Art Director,
                   Studio Manager, Brand Manager, Digital Content Manager and
                   Visual Auditor for a vast number of clients which operate in
@@ -92,7 +92,7 @@ export default function Profile() {
                   management which attributes to his overall success in the
                   industry.
                 </p>
-                <p className="mt-8">
+                <p className="mt-4">
                   I specialise in helping businesses become more streamlined,
                   connected and responsive to the marketplace through incisive
                   digital communication strategies. Today, customers have more
@@ -101,18 +101,21 @@ export default function Profile() {
                   to your audience, using their language and meeting them where
                   they are, you won’t be around for much longer…
                 </p>
-                <p className="mt-8">
+                <p className="mt-4">
                   Clients are your success, and how you keep meeting their
                   needs, retaining their trust, while providing for them,
                   matters now more than ever. They are fed up with ineffective
-                  branding and advertising which says and does nothing. <br />
+                  branding and advertising which says and does nothing.
+                </p>
+                <p className="mt-4">
                   If you’re a company that’s tired of agencies promising
                   marketing heaven, but seeing no change to your bottom line,
                   I’ll show you how authentically connecting with your clients
                   and delivering them REAL VALUE will increase revenue, secure
                   long-term business and establish a leading position in the
                   market.
-                  <br />
+                </p>
+                <p className="mt-4">
                   To bring about your business growth, i use incisive content,
                   persuasive storytelling and customer-driven marketing which
                   really speaks the language of your audience.

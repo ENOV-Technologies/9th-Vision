@@ -59,7 +59,7 @@ export default function Clients() {
                       <IconButton
                         onClick={() => handleOpen("xxl")}
                         size="lg"
-                        className="rounded-full bg-transparent my-4"
+                        className="rounded-full bg-transparent my-5"
                       >
                         <PlusIcon className="h-10 w-10 border-2 rounded-full transition-transform group-hover:rotate-45 border-white animate-bounce hover:animate-none" />
                       </IconButton>
@@ -86,7 +86,8 @@ export default function Clients() {
                           </Button>
                           <a
                             className="bg-gray-800 font-normal text-white p-2 rounded-lg hover:bg-gray-900 hover:shadow-lg text-sm"
-                            href={"/public/BhekiProfile.pdf"}
+                            href={"/BhekiProfile.pdf"}
+                            download
                           >
                             <span>Download Profile</span>
                           </a>
@@ -97,7 +98,7 @@ export default function Clients() {
                 </div>
 
                 {/* 1st */}
-                <p className="w-full  tracking-tight text-sm border-0 text-left text-white font-light sm:text-base">
+                <p className="w-full  tracking-tight text-base border-0 text-left text-white font-light sm:text-sm">
                   Glad to be of acquaintance. What better way to start off your
                   day with new{" "}
                   <span className="font-normal">
@@ -108,7 +109,7 @@ export default function Clients() {
                 </p>
 
                 {/* 2nd */}
-                <p className="w-full sm:max-w-96 max-w-64 tracking-tight py-8 text-sm border-0 text-left text-white font-light sm:text-base">
+                <p className="w-full sm:max-w-96 max-w-64 tracking-tight py-8 text-base border-0 text-left text-white font-light sm:text-sm">
                   Below is a once-off offer to launch you onto the marketing
                   stage with a bang.
                 </p>
