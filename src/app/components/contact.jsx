@@ -12,8 +12,56 @@ import {
   SpeedDialAction,
 } from "@material-tailwind/react";
 import { PlusIcon } from "@heroicons/react/24/outline";
+import emailjs from "@emailjs/browser";
+import { useForm } from "react-hook-form";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
+  const [isVerified, setVerified] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data, event) => {
+    event.preventDefault();
+    // Check if reCAPTCHA is verified before submitting the form
+    if (!isVerified) {
+      alert("Please verify that you are not a robot.");
+      return;
+    }
+    const templateParams = {
+      name: data.name,
+      email: data?.email,
+      message: data?.message,
+    };
+    console.log(templateParams);
+
+    emailjs
+      .send(
+        "service_qommx24",
+        "template_e3yeusc",
+        templateParams,
+        "YcoiS23pTIOyQC_Pe"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Hoooray, message sent successfully");
+          event.target.reset();
+
+          // Disappear in 3 secs
+          // setTimeout(() => {
+          //   setTimeOut(1)
+          // }, 3000)
+        },
+        function (error) {
+          alert("OOPs something went wrong... Try again later");
+          console.log("FAILED...", error);
+        }
+      );
+  };
   return (
     <div className="h-full" style={{ backgroundColor: "#480AEE" }} id="offer">
       <div className="py-24 sm:py-20">
@@ -79,7 +127,11 @@ export default function Contact() {
             {/* Form */}
             <div className="container mx-auto px-2 sm:py-16 py-4 ">
               <div>
-                <form class="max-w-sm mx-auto border p-8 rounded-3xl border-white">
+                <form
+                  onSubmit={handleSubmit(onSubmit)}
+                  class="max-w-sm mx-auto border p-8 rounded-3xl border-white"
+                >
+                  {/* Form Intro */}
                   <div className="text-center text-white font-light">
                     <h2 className="text-xl tracking-tight">
                       Here is a kickstart 5% off your next project with us.
@@ -93,22 +145,24 @@ export default function Contact() {
                       *We do serve hot offers!
                     </p>
                   </div>
+                  {/* Form Intro end */}
+
                   <div class="mb-5">
                     <input
                       type="text"
                       id="name"
                       className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-white focus:border-gray-50  dark:placeholder-gray-400 font-light focus:shadow-2xl focus:scale-105 transition duration-500 ease-in-out transform"
                       placeholder="Name"
-                      required
+                      {...register("name", { required: true })}
                     />
                   </div>
                   <div class="mb-5">
                     <input
                       type="email"
-                      id="Email"
+                      id="email"
                       placeholder="Email"
                       className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-white focus:border-gray-50  dark:placeholder-gray-400 font-light focus:shadow-2xl focus:scale-105 transition duration-500 ease-in-out transform"
-                      required
+                      {...register("email", { required: true })}
                     />
                   </div>
 
@@ -117,10 +171,18 @@ export default function Contact() {
                     rows="4"
                     className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-white focus:border-gray-50  dark:placeholder-gray-400 font-light focus:shadow-2xl focus:scale-105 transition duration-500 ease-in-out transform"
                     placeholder="Leave a comment..."
-                  ></textarea>
+                  />
+                  {/* Add reCAPTCHA component */}
+                  <ReCAPTCHA
+                    sitekey={"6LdMb3QpAAAAAHC5fNjEvkX9nGXLzYcjRVdVGkwx"}
+                    onChange={(value) => setVerified(!!value)}
+                    className="py-2"
+                  />
 
+                  {/* Submit button */}
                   <button
                     type="submit"
+                    disabled={!isVerified} // Disable button if reCAPTCHA is not verified
                     className="my-4 text-sm font-light leading-6 text-white p-2 px-8 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/95 hover:text-gray-900 hover:shadow-xl hover:shadow-gray-900/30"
                   >
                     Send

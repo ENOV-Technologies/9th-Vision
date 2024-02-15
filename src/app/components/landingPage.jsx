@@ -69,6 +69,29 @@ export default function Landing() {
                 Let’s get you started
               </a>
             </div>
+            {/* Tooltip */}
+            {/* <div className="z-40 border-2 sm:m-3 m-0 py-2 rounded-full">
+              <Tooltip
+                placement="top"
+                content="Hi, and welcome
+            to Ninth Vision.
+            How can I be of
+            assistance?"
+                color="gray"
+                className="bg-gray-900/80 p-2 px-4 font-light w-full pb-4 text-sm max-w-52"
+                size="regular"
+              >
+                <div className="text-white focus:ring-4 focus:outline-none focus:ring-white font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                  <Image
+                    src={Popup}
+                    width={600}
+                    height={600}
+                    alt=""
+                    className="rounded-full h-12 w-12 sm:h-16 sm:w-16 object-cover animate-pulse"
+                  />
+                </div>
+              </Tooltip>
+            </div> */}
           </div>
         </div>
 

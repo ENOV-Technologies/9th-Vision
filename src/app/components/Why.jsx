@@ -40,7 +40,7 @@ export default function Why() {
         </div>
 
         {/* Content */}
-        <div className="py-48 sm:mx-80 mx-8">
+        <div className="py-48 mx-8 sm:mx-32 md:mx-52 lg:mx-64">
           {/* Heading */}
           <h1 className="text-7xl sm:text-9xl font-black tracking-tight text-white capitalize">
             Create
