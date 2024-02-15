@@ -63,10 +63,16 @@ export default function Landing() {
                 </span>
                 <div class="border-t border-gray-50 border-x-8 px-6 grow" />
               </div> */}
-              <p className=" text-base leading-8 text-white font-normal">
+              <p
+                className=" text-base leading-8 text-white font-normal"
+                style={{ fontFamily: "poppins", fontWeight: "700" }}
+              >
                 Welcome to Ninth Vision <br />
               </p>
-              <p className=" text-lg leading-8 text-white font-light">
+              <p
+                className=" text-lg leading-8 text-white font-light"
+                style={{ fontFamily: "poppins", fontWeight: "400" }}
+              >
                 Is your company ready to weather the recession?
               </p>
             </div>
