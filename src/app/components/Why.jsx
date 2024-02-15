@@ -90,7 +90,7 @@ export default function Why() {
               </SpeedDialAction>
 
               {/* 2nd object */}
-              <Link href={"#"}>
+              <Link href={"#"} className="">
                 <SpeedDialAction className="sm:h-16 h-5 sm:w-16 w-5 bg-transparent">
                   <Image
                     src={Engage}
