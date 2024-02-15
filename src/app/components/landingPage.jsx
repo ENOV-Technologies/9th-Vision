@@ -26,13 +26,19 @@ export default function Landing() {
         <div className="mx-auto max-w-2xl py-20 sm:py-38 lg:py-30">
           <div className="text-center antialiased">
             {/* one */}
-            <h1 className="text-7xl font-black tracking-tight text-white sm:text-8xl uppercase">
+            <h1
+              className="text-7xl font-black tracking-tight text-white sm:text-8xl uppercase"
+              style={{ fontFamily: "poppins", fontWeight: "900" }}
+            >
               Stay <br /> ahead
             </h1>
             {/* one end */}
 
             {/* two */}
-            <h2 className="relative flex py-5 items-center uppercase text-4xl font-black tracking-tight text-white sm:text-5xl">
+            <h2
+              className="relative flex py-5 items-center uppercase text-4xl font-black tracking-tight text-white sm:text-5xl"
+              style={{ fontFamily: "poppins", fontWeight: "900" }}
+            >
               <div class="flex-grow border-t-8 border-gray-50" />
               <span class="flex-shrink mx-4 text-white">of the</span>
               <div class="border-t-8 border-gray-50 flex-grow" />
@@ -40,7 +46,10 @@ export default function Landing() {
             {/* two end */}
 
             {/* three */}
-            <h1 className="text-6xl font-bold tracking-tight text-white sm:text-8xl uppercase">
+            <h1
+              className="text-6xl font-bold tracking-tight text-white sm:text-8xl uppercase"
+              style={{ fontFamily: "poppins", fontWeight: "900" }}
+            >
               competition
             </h1>
             {/* three end */}
