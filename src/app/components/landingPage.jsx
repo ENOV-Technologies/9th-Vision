@@ -7,16 +7,10 @@ import BG from "/public/Main.jpg";
 
 export default function Landing() {
   return (
-    <div className="bg-gray-900 h-full">
-      <div className="relative isolate overflow-hidden">
+    <div className="bg-gray-900">
+      <div className="relative isolate overflow-hidden h-screen w-screen">
         {/* Image */}
-        <div
-          className="absolute inset-0 -z-10 h-full w-full"
-          // style={{
-          //   transform: `translateY(${scrollY * 0.5}px)`,
-          //   transition: "transform 0.1s ease-out",
-          // }}
-        >
+        <div className="absolute inset-0 -z-10 ">
           <Image
             // width={1000}
             // height={1000}
@@ -24,12 +18,12 @@ export default function Landing() {
             // sizes="100vw"
             src={BG}
             alt="Stars"
-            className="h-full w-full object-cover antialiased"
+            className="object-cover antialiased"
           />
         </div>
 
         {/* Content */}
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-48">
+        <div className="mx-auto max-w-2xl py-20 sm:py-38 lg:py-36">
           <div className="text-center antialiased">
             {/* one */}
             <h1 className="text-7xl font-bold tracking-tight text-white sm:text-7xl uppercase">
@@ -79,7 +73,7 @@ export default function Landing() {
         </div>
 
         {/* Tooltip */}
-        <div className="z-40 absolute right-8 bottom-5 border-2 m-3 py-2 rounded-full">
+        <div className="z-40 absolute sm:right-8 sm:bottom-5 bottom-1 right-2 border-2 sm:m-3 m-0 py-2 rounded-full">
           <Tooltip
             placement="top"
             content="Hi, and welcome
@@ -96,7 +90,7 @@ export default function Landing() {
                 width={600}
                 height={600}
                 alt=""
-                className="rounded-full h-16 w-16 object-cover animate-pulse"
+                className="rounded-full h-12 w-12 sm:h-16 sm:w-16 object-cover animate-pulse"
               />
             </div>
           </Tooltip>

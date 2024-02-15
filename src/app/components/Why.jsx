@@ -24,7 +24,7 @@ import Connect from "/public/connect.png";
 
 export default function Why() {
   return (
-    <div className="bg-gray-900 h-full">
+    <div className="bg-gray-900" id="stories">
       <div className="relative isolate overflow-hidden">
         {/* Image */}
         <div className="absolute inset-0 -z-10 object-cover h-full w-full">
@@ -34,8 +34,8 @@ export default function Why() {
             fill
             // sizes="100vw"
             src={BG}
-            alt="Stars"
-            className="object-cover h-full w-full"
+            alt="Sculpture of a man"
+            className="object-cover"
           />
         </div>
 
@@ -51,7 +51,7 @@ export default function Why() {
           </h1>
           {/* Heading end */}
 
-          <SpeedDial placement="right">
+          <SpeedDial placement="right" className="">
             {/* Plus icon */}
             <SpeedDialHandler>
               <IconButton

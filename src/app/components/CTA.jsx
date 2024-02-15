@@ -6,7 +6,7 @@ import BG from "/public/Main.jpg";
 
 export default function Clients() {
   return (
-    <div className="h-full bg-blue-gray-600">
+    <div className="h-full" style={{ backgroundColor: "#480AEE" }} id="dm">
       <div className="overflow-hidden  py-24 sm:py-32 relative isolate">
         {/* Image */}
         <div className="absolute inset-0 -z-10 h-full w-full">
@@ -17,7 +17,7 @@ export default function Clients() {
             // sizes="100vw"
             src={BG}
             alt="Stars"
-            className="h-full w-full object-cover antialiased"
+            className="object-cover antialiased"
           />
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

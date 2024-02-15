@@ -3,6 +3,8 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import Socials from "./components/socials";
 import { Analytics } from '@vercel/analytics/react';
+import Nav from './components/nav';
+import ScrollUp from "./components/ScrollUp";
 
 
 const poppins = Poppins({
@@ -42,8 +44,10 @@ export default function RootLayout({
         /> */}
       </head>
       <body className="relative">
+        <Nav/>
         {children}
         <Socials />
+        <ScrollUp />
         <Analytics/>
       </body>
     </html>

@@ -13,7 +13,7 @@ import BG from "/public/ThinkingMan.jpg";
 
 export default function About() {
   return (
-    <div className="bg-gray-900 h-full">
+    <div className="bg-gray-900 h-full" id="about">
       <div className="relative isolate overflow-hidden">
         {/* Image */}
         <div className="absolute inset-0 -z-10 h-full w-full">

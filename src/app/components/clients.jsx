@@ -2,6 +2,16 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
+import Catalyst from "/public/Logos/Catalyst.jpg";
+import HD from "/public/Logos/HD.jpg";
+import Indima from "/public/Logos/Indima.jpg";
+import LastTata from "/public/Logos/LastTata.jpg";
+import Mureza from "/public/Logos/Mureza.png";
+import NTB from "/public/Logos/NTB.jpg";
+import SOAS from "/public/Logos/SOAS.jpg";
+import Spruit from "/public/Logos/Spruit.png";
+import Urgecentum from "/public/Logos/Urgecentum.jpg";
+import Wernhil from "/public/Logos/Wernhil.jpg";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -50,58 +60,104 @@ export default function Clients() {
               <Slider {...settings}>
                 <div>
                   <Image
-                    src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
+                    src={Catalyst}
+                    alt="Catalyst logo"
                     width={1200}
                     height={800}
                     className=""
                   />
                 </div>
+
                 <div>
                   <Image
-                    src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
+                    src={HD}
+                    alt="Healthy Delights logo"
                     width={1200}
                     height={800}
                     className=""
                   />
                 </div>
+
                 <div>
                   <Image
-                    src="https://images.unsplash.com/photo-1611339555312-e607c8352fd7?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
+                    src={Indima}
+                    alt="Indima logo"
                     width={1200}
                     height={800}
                     className=""
                   />
                 </div>
+
                 <div>
                   <Image
-                    src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
+                    src={LastTata}
+                    alt="LastTata logo"
                     width={1200}
                     height={800}
                     className=""
                   />
                 </div>
+
                 <div>
                   <Image
-                    src="https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
+                    src={Mureza}
+                    alt="Mureza logo"
                     width={1200}
                     height={800}
                     className=""
                   />
                 </div>
+
                 <div>
                   <Image
-                    src="https://images.unsplash.com/photo-1611162618479-ee3d24aaef0b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D"
-                    alt=""
+                    src={NTB}
+                    alt="Namibia Tourism Board logo"
                     width={1200}
                     height={800}
                     className=""
                   />
                 </div>
+
+                <div>
+                  <Image
+                    src={SOAS}
+                    alt="Soul of Art Shop logo"
+                    width={1200}
+                    height={800}
+                    className=""
+                  />
+                </div>
+
+                <div>
+                  <Image
+                    src={Spruit}
+                    alt="Spruit logo"
+                    width={1200}
+                    height={800}
+                    className="bg-white"
+                  />
+                </div>
+
+                <div>
+                  <Image
+                    src={Urgecentum}
+                    alt="Urgecentum logo"
+                    width={1200}
+                    height={800}
+                    className=""
+                  />
+                </div>
+
+                <div>
+                  <Image
+                    src={Wernhil}
+                    alt="Wernhil logo"
+                    width={1200}
+                    height={800}
+                    className=""
+                  />
+                </div>
+                
               </Slider>
             </div>
           </div>
