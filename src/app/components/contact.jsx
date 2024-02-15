@@ -40,7 +40,7 @@ export default function Contact() {
                           size="lg"
                           className="rounded-full bg-transparent my-4"
                         >
-                          <PlusIcon className="h-10 w-10 border-2 rounded-full transition-transform group-hover:rotate-45 border-white" />
+                          <PlusIcon className="h-10 w-10 border-2 rounded-full transition-transform group-hover:rotate-45 border-white animate-bounce hover:animate-none" />
                         </IconButton>
                       </SpeedDialHandler>
 
