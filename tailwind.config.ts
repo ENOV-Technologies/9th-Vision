@@ -8,6 +8,9 @@ module.exports = withMT({
     "./node_modules/flowbite-react/lib/**/*.js",
   ],
   theme: {
+    colors:{
+      vpurple:"#480AEE"
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

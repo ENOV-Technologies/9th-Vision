@@ -68,10 +68,10 @@ export default function About() {
                   {/* CTA */}
                   <div className="w-full mt-2 flex items-left">
                     <a
-                      href="#"
+                      href="#offer"
                       className="text-sm font-base leading-6 text-white p-2 px-6 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/15"
                     >
-                      Let’s get you started
+                      Get in touch
                     </a>
                   </div>
                 </SpeedDialAction>

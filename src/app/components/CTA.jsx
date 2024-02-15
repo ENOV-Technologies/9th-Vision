@@ -117,7 +117,7 @@ export default function Clients() {
                 {/* CTA */}
                 <div className="w-full flex items-left">
                   <a
-                    href="#"
+                    href="#offer"
                     className="text-sm font-light leading-6 text-white p-2 px-6 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/95 hover:text-gray-900 hover:shadow-xl hover:shadow-gray-900/30"
                   >
                     Grab my offer now

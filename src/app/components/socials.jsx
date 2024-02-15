@@ -42,7 +42,7 @@ export default function DefaultSpeedDial() {
             <IconButton
               color="white"
               size="lg"
-              className="mx-2 h-8 w-8 rounded-full border border-blue-gray-50 shadow-xl"
+              className="mx-2.5 h-8 w-8 rounded-full border border-blue-gray-50 shadow-xl"
             >
               <PlusIcon className="h-5 w-5 transition-transform group-hover:rotate-45" />
             </IconButton>

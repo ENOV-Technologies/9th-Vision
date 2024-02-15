@@ -34,7 +34,7 @@ export default function Nav() {
                 <li>
                   <a
                     href="#about"
-                    className="sm:text-7xl sm:hover:text-8xl text-4xl hover:text-5xl transition duration-500 ease-in-out hover:text-pink-800"
+                    className="sm:text-7xl sm:hover:text-7xl text-5xl py-6 px-2 tracking-tight hover:text-4xl transition duration-300 ease-in-out hover:text-vpurple"
                     onClick={toggleMenu} // Close menu on click
                   >
                     About
@@ -43,7 +43,7 @@ export default function Nav() {
                 <li>
                   <a
                     href="#stories"
-                    className="sm:text-7xl sm:hover:text-8xl text-4xl hover:text-5xl transition duration-500 ease-in-out hover:text-pink-800"
+                    className="sm:text-7xl sm:hover:text-7xl text-5xl py-6 px-2 tracking-tight hover:text-4xl transition duration-300 ease-in-out hover:text-vpurple"
                     onClick={toggleMenu} // Close menu on click
                   >
                     Stories that engage
@@ -52,7 +52,7 @@ export default function Nav() {
                 <li>
                   <a
                     href="#dm"
-                    className="sm:text-7xl sm:hover:text-8xl text-4xl hover:text-5xl transition duration-500 ease-in-out hover:text-pink-800"
+                    className="sm:text-7xl sm:hover:text-7xl text-5xl py-6 px-2 tracking-tight hover:text-4xl transition duration-300 ease-in-out hover:text-vpurple"
                     onClick={toggleMenu} // Close menu on click
                   >
                     Digital marketing
@@ -61,7 +61,7 @@ export default function Nav() {
                 <li>
                   <a
                     href="#offer"
-                    className="sm:text-7xl sm:hover:text-8xl text-4xl hover:text-5xl transition duration-500 ease-in-out hover:text-pink-800"
+                    className="sm:text-7xl sm:hover:text-7xl text-5xl py-6 px-2 tracking-tight hover:text-4xl transition duration-300 ease-in-out hover:text-vpurple"
                     onClick={toggleMenu} // Close menu on click
                   >
                     Grab your Special offer

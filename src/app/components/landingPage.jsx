@@ -54,8 +54,10 @@ export default function Landing() {
                 </span>
                 <div class="border-t border-gray-50 border-x-8 px-6 grow" />
               </div> */}
-              <p className=" text-base leading-8 text-white font-light">
+              <p className=" text-base leading-8 text-white font-normal">
                 Welcome to Ninth Vision <br />
+              </p>
+              <p className=" text-lg leading-8 text-white font-light">
                 Is your company ready to weather the recession?
               </p>
             </div>
@@ -64,7 +66,7 @@ export default function Landing() {
             {/* CTA */}
             <div className="mt-2 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="#dm"
                 className="text-sm font-semibold leading-6 text-white p-3 px-6 border-2 rounded-full duration-500 ease-in-out transform relative overflow-hidden hover:bg-white/15"
               >
                 Let’s get you started

@@ -31,10 +31,10 @@ export default function Home() {
         </div>
       </div> */}
       <LandingPage />
-      <About />
-      <Why />
-      <Clients />
       <CTA />
+      <Why />
+      <About />
+      <Clients />
       <Contact />
     </>
   );
