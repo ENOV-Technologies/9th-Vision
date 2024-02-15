@@ -34,7 +34,7 @@ export default function Nav() {
                 <li>
                   <a
                     href="#about"
-                    className="text-7xl hover:text-8xl transition duration-500 ease-in-out hover:text-pink-800"
+                    className="sm:text-7xl sm:hover:text-8xl text-4xl hover:text-5xl transition duration-500 ease-in-out hover:text-pink-800"
                     onClick={toggleMenu} // Close menu on click
                   >
                     About
@@ -43,7 +43,7 @@ export default function Nav() {
                 <li>
                   <a
                     href="#stories"
-                    className="text-7xl hover:text-8xl transition duration-500 ease-in-out hover:text-pink-800"
+                    className="sm:text-7xl sm:hover:text-8xl text-4xl hover:text-5xl transition duration-500 ease-in-out hover:text-pink-800"
                     onClick={toggleMenu} // Close menu on click
                   >
                     Stories that engage
@@ -52,7 +52,7 @@ export default function Nav() {
                 <li>
                   <a
                     href="#dm"
-                    className="text-7xl hover:text-8xl transition duration-500 ease-in-out hover:text-pink-800"
+                    className="sm:text-7xl sm:hover:text-8xl text-4xl hover:text-5xl transition duration-500 ease-in-out hover:text-pink-800"
                     onClick={toggleMenu} // Close menu on click
                   >
                     Digital marketing
@@ -61,7 +61,7 @@ export default function Nav() {
                 <li>
                   <a
                     href="#offer"
-                    className="text-7xl hover:text-8xl transition duration-500 ease-in-out hover:text-pink-800"
+                    className="sm:text-7xl sm:hover:text-8xl text-4xl hover:text-5xl transition duration-500 ease-in-out hover:text-pink-800"
                     onClick={toggleMenu} // Close menu on click
                   >
                     Grab your Special offer
