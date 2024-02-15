@@ -23,16 +23,16 @@ export default function Landing() {
         </div>
 
         {/* Content */}
-        <div className="mx-auto max-w-2xl py-20 sm:py-38 lg:py-36">
+        <div className="mx-auto max-w-2xl py-20 sm:py-38 lg:py-30">
           <div className="text-center antialiased">
             {/* one */}
-            <h1 className="text-7xl font-bold tracking-tight text-white sm:text-7xl uppercase">
+            <h1 className="text-7xl font-black tracking-tight text-white sm:text-8xl uppercase">
               Stay <br /> ahead
             </h1>
             {/* one end */}
 
             {/* two */}
-            <h2 className="relative flex py-5 items-center uppercase text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <h2 className="relative flex py-5 items-center uppercase text-4xl font-black tracking-tight text-white sm:text-5xl">
               <div class="flex-grow border-t-8 border-gray-50" />
               <span class="flex-shrink mx-4 text-white">of the</span>
               <div class="border-t-8 border-gray-50 flex-grow" />
@@ -40,21 +40,22 @@ export default function Landing() {
             {/* two end */}
 
             {/* three */}
-            <h1 className="text-7xl font-bold tracking-tight text-white sm:text-8xl uppercase">
+            <h1 className="text-6xl font-bold tracking-tight text-white sm:text-8xl uppercase">
               competition
             </h1>
             {/* three end */}
 
             {/* four */}
             <div className="py-8">
-              <div className="relative flex items-center capitalise font-bold tracking-tight text-white text-base">
+              {/* <div className="relative flex items-center capitalise font-bold tracking-tight text-white text-base">
                 <div class="border-t border-gray-50 border-x-8 px-6 grow" />
                 <span class="flex-shrink mx-4 text-white text-base font-light text-center">
                   Welcome to Ninth Vision
                 </span>
                 <div class="border-t border-gray-50 border-x-8 px-6 grow" />
-              </div>
+              </div> */}
               <p className=" text-base leading-8 text-white font-light">
+                Welcome to Ninth Vision <br />
                 Is your company ready to weather the recession?
               </p>
             </div>
