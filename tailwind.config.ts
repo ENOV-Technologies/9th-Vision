@@ -1,4 +1,6 @@
 const withMT = require("@material-tailwind/react/utils/withMT");
+const defaultTheme = require('tailwindcss/defaultTheme')
+
  
 module.exports = withMT({
   content: [
@@ -12,6 +14,9 @@ module.exports = withMT({
       vpurple:"#480AEE"
     },
     extend: {
+      fontFamily: {
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans]
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -40,9 +40,9 @@ export default function Why() {
         </div>
 
         {/* Content */}
-        <div className="py-48 mx-8 sm:mx-32 md:mx-52 lg:mx-64">
+        <div className="py-48 mx-4 sm:mx-32 md:mx-52 lg:mx-60">
           {/* Heading */}
-          <h1 className="text-7xl sm:text-9xl font-black tracking-tight text-white capitalize">
+          <h1 className="text-6xl sm:text-9xl font-black tracking-tight text-white capitalize">
             Create
             <br />
             memorable
@@ -82,7 +82,7 @@ export default function Why() {
                 <div className="w-full mt-2 flex items-left">
                   <a
                     href="#offer"
-                    className="text-sm font-base leading-6 text-white p-2 px-6 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/15"
+                    className="text-sm font-base leading-6 text-white p-2 px-5 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/95 hover:text-gray-900 hover:shadow-xl"
                   >
                     I like this, let’s do It
                   </a>

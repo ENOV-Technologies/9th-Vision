@@ -37,7 +37,7 @@ export default function Clients() {
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 {/* Heading */}
-                <h1 className="text-7xl sm:text-9xl font-black tracking-tight text-white capitalize">
+                <h1 className="text-6xl sm:text-9xl font-black tracking-tight text-white capitalize">
                   Meet our
                   <br /> happy
                   <br /> Clients

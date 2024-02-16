@@ -34,9 +34,9 @@ export default function Clients() {
             className="object-cover antialiased"
           />
         </div>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-2 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            {/* Content */}
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <div className="grid max-w-2xl grid-cols-1 gap-x-2 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            {/* Left Content */}
             <div className="lg:pr-4 lg:pt-4">
               <div className="lg:max-w-lg">
                 {/* Left Content */}
@@ -49,7 +49,7 @@ export default function Clients() {
                     className="rounded-full h-32 w-32 object-cover border-2 border-spacing-16 mb-4 p-3 animate-pulse"
                   />
                   <h2 className="font-normal">Bhekisipho Maphosa</h2>
-                  <h3 className="font-light">
+                  <h3 className="font-light text-sm">
                     Creative Brand & Digital Marketer
                   </h3>
                   {/* Modal */}
@@ -118,7 +118,7 @@ export default function Clients() {
                 <div className="w-full flex items-left">
                   <a
                     href="#offer"
-                    className="text-sm font-light leading-6 text-white p-2 px-6 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/95 hover:text-gray-900 hover:shadow-xl hover:shadow-gray-900/30"
+                    className="text-sm font-light leading-6 text-white p-2 px-5 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/95 hover:text-gray-900 hover:shadow-xl hover:shadow-gray-900/30"
                   >
                     Grab my offer now
                   </a>
@@ -129,14 +129,11 @@ export default function Clients() {
 
             {/* Right Content */}
             <div className="container">
-              <h1 className="text-5xl sm:text-8xl font-black tracking-tight text-white capitalize">
-                Reach your
-                <br /> marketing
-                <br /> goals and get
+              <h1 className="text-6xl sm:text-8xl font-black tracking-tight text-white">
+                Reach Your
+                <br /> Marketing
                 <br />
-                real return
-                <br />
-                on investment
+                Goals and get Real Return on Investment
               </h1>
             </div>
           </div>

@@ -30,10 +30,9 @@ export default function About() {
 
         <div className="py-48 px-18 mx-10">
           {/* Heading */}
-          <h1 className="text-7xl sm:text-9xl font-black tracking-tight text-white capitalize">
+          <h1 className="text-6xl sm:text-9xl font-black tracking-tight text-white capitalize">
             Let your
-            <br /> brand tell
-            <br /> your story
+            <br /> brand tell<br/> your story
           </h1>
           {/* Heading end */}
 
@@ -69,7 +68,7 @@ export default function About() {
                   <div className="w-full mt-2 flex items-left">
                     <a
                       href="#offer"
-                      className="text-sm font-base leading-6 text-white p-2 px-6 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/15"
+                      className="text-sm font-base leading-6 text-white p-2 px-5 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/95 hover:text-gray-900 hover:shadow-xl"
                     >
                       Get in touch
                     </a>
