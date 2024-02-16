@@ -61,7 +61,8 @@ export default function Clients() {
                         size="lg"
                         className="rounded-full bg-transparent my-5"
                       >
-                        <PlusIcon className="h-10 w-10 border-2 rounded-full transition-transform group-hover:rotate-45 border-white animate-bounce hover:animate-none" />
+                        <PlusIcon className="h-10 w-10 border-2 rounded-full transition-transform group-hover:rotate-45 border-white" />
+                        <div class="absolute top-4 right-4 -mr-1 -mt-1 w-4 h-4 rounded-full bg-vpurple animate-ping"></div>
                       </IconButton>
 
                       {/* Hidden Content */}
