@@ -111,8 +111,8 @@ export default function Contact() {
                           <div className="w-full mt-2 flex items-left">
                             <a
                               href="tel:+264 81 201 9135"
-                              className="text-sm font-base leading-6 text-white p-2 px-6 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/15"
-                            >
+                              className="text-sm font-base leading-6 text-white p-2 px-5 border-2 rounded-full duration-500 ease-in-out transform overflow-hidden hover:bg-white/95 hover:text-gray-900 hover:shadow-xl"
+                              >
                               Grab a slice of the Market
                             </a>
                           </div>
